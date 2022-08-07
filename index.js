@@ -24,6 +24,6 @@ app.use (cookieParser())
 app.use('/',redirectRouter)
 app.use('/api/v1/auth',routAuth)
 app.use('/api/v1/links',linkRouter)
-app.use(express.static("public"))
+//app.use(express.static("public"))
 const PORT = process.env.PORT|| 5000
 app.listen(5000, ()=>console.log("Server UP   http://localhost:" + PORT))
